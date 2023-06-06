@@ -211,7 +211,7 @@ export class Game {
         const newRequestBody = gameName + '\n' + requestBody;
         console.log(requestBody);
 
-        let requestUrl = 'http://localhost:3000/save';
+        let requestUrl = '/save';
 
         // If gameIndex is defined, it is sent through. If it is not, it is sent as -1 to indicate to push the game
         if (gameIndex !== undefined) {
