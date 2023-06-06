@@ -75,8 +75,8 @@ app.post('/save', (req, res) => {
     };
 
     // Read the data file
-    //const filePath = path.join(__dirname, '..', '../test.txt');
-    const gameData = fs.readFileSync("/etc/secrets/test.txt", 'utf8');
+    const filePath = path.join(__dirname, '..', 'data.txt');
+    const gameData = fs.readFileSync(filePath, 'utf8');
 
     // Games are seperated by two newlines
     const gameEntries = gameData.trim().split(/\n\n/);
@@ -128,8 +128,8 @@ app.post('/save', (req, res) => {
 });
 
 app.get('/load', (req, res) => {
-  //const filePath = path.join(__dirname, '..', '../test.txt');
-  const filePath = "/etc/secrets/test.txt"
+  const filePath = path.join(__dirname, '..', 'data.txt');
+  //const filePath = "/etc/secrets/test.txt"
   fs.access(filePath, fs.constants.F_OK, (err) => {
     if (err) {
       console.error('Data file does not exist:', filePath);

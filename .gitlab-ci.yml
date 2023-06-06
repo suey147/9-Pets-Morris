@@ -1,7 +1,0 @@
-deploy:
-  stage: deploy
-  script:
-    - echo "Deploy to staging server"
-  environment:
-    name: production
-    url: https://git.infotech.monash.edu/fit3077-s1-2023/nine-pets-morris

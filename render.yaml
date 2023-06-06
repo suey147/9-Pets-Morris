@@ -1,0 +1,3 @@
+version: 1
+write_commands:
+  - chmod +rw data.txt
