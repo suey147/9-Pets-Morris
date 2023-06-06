@@ -116,9 +116,16 @@ export class Display {
         startNewGameButton.addEventListener('click', function () { Application.getInstance().startNewGame(); });
 
         // set up download data.txt button listener
-        const downloadGSButton = document.getElementById("download");
+        const downloadGSButton = document.getElementById("download") as HTMLButtonElement;
         downloadGSButton.removeEventListener('click', function () { Application.getInstance().downloadGS(); });
         downloadGSButton.addEventListener('click', function () { Application.getInstance().downloadGS(); });
+
+        // disable the download button if no previous games available
+        if (gameList.length == 0) {
+            downloadGSButton.disabled = true;
+        } else {
+            downloadGSButton.disabled = false;
+        }
     }
 
     /**
