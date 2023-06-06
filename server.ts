@@ -75,7 +75,7 @@ app.post('/save', (req, res) => {
     };
 
     // Read the data file
-    const filePath = path.join(__dirname, '..', 'data.txt');
+    const filePath = path.join(__dirname, '..', 'test.txt');
     const gameData = fs.readFileSync(filePath, 'utf8');
 
     // Games are seperated by two newlines
@@ -128,7 +128,7 @@ app.post('/save', (req, res) => {
 });
 
 app.get('/load', (req, res) => {
-  const filePath = path.join(__dirname, '..', 'data.txt');
+  const filePath = path.join(__dirname, '..', 'test.txt');
 
   fs.access(filePath, fs.constants.F_OK, (err) => {
     if (err) {
