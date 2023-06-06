@@ -128,7 +128,7 @@ app.post('/save', (req, res) => {
 });
 
 app.get('/load', (req, res) => {
-  const filePath = path.join(__dirname, '..', 'data.txt');
+  const filePath = path.join(__dirname, '..', '/etc/secrets/data.txt');
 
   fs.access(filePath, fs.constants.F_OK, (err) => {
     if (err) {
