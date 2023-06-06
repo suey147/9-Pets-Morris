@@ -1,5 +1,0 @@
-newGame
-{"teams":[{"player":0,"numUnplacedTokens":9,"numAliveTokens":9},{"player":1,"numUnplacedTokens":9,"numAliveTokens":9}],"currentPlayer":0,"positions":[{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],"gamePhase":1}
-{"teams":[{"player":0,"numUnplacedTokens":8,"numAliveTokens":9},{"player":1,"numUnplacedTokens":9,"numAliveTokens":9}],"currentPlayer":1,"positions":[{},{"player":0},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],"gamePhase":1}
-{"teams":[{"player":0,"numUnplacedTokens":8,"numAliveTokens":9},{"player":1,"numUnplacedTokens":8,"numAliveTokens":9}],"currentPlayer":0,"positions":[{},{"player":0},{},{},{"player":1},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],"gamePhase":1}
-{"teams":[{"player":0,"numUnplacedTokens":7,"numAliveTokens":9},{"player":1,"numUnplacedTokens":8,"numAliveTokens":9}],"currentPlayer":1,"positions":[{},{"player":0},{},{},{"player":1},{},{},{},{"player":0},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}],"gamePhase":1}
