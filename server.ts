@@ -75,7 +75,7 @@ app.post('/save', (req, res) => {
     };
 
     // Read the data file
-    const filePath = path.join(__dirname, '..', 'data.txt');
+    const filePath = path.join(__dirname, '..', '/etc/secrets/data.txt');
     const gameData = fs.readFileSync(filePath, 'utf8');
 
     // Games are seperated by two newlines
