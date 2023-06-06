@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="Application.css">
+
+  <title>Nine Pets' Morris</title>
+</head>
+
+<body background="assets/background.png">
+  <br>
+
+  <div class="row" style="text-align: center;">
+
+    <div class="column">
+      <img class="cat" src="assets/cat.png">
+    </div>
+
+    <div class="column">
+      <h1 style="text-align: center; font-size: 5vh; line-height: 0.8;">
+        Nine Pets' Morris
+      </h1>
+    </div>
+
+    <div class="column">
+      <img class="dog" src="assets/dog.png">
+    </div>
+
+  </div>
+
+  <br>
+
+  <h2 style="text-align: center;">
+    Start a new game, or continue playing one of the following games.
+  </h2>
+
+  <br>
+
+  <div class="wrapper">
+    <button id="startNewGame" class="startNewGame">Start New Game</button>
+  </div>
+
+  <br>
+  
+  <div class="wrapper">
+    <ol id="gameList" class="gameList">No previous games available, please start a new game.</ol>
+  </div>
+
+  <script>var exports = {};</script>
+  <script type="module" src="out/TS/Application.js"></script>
+</body>
+
+</html>

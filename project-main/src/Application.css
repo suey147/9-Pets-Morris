@@ -1,0 +1,155 @@
+img.cat {
+    width: 8vw;
+    float: right;
+}
+
+img.dog {
+    width: 8vw;
+    float: left;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+img.currentTurnImage {
+    width: 50%;
+    float: left;
+    padding-top: 10px;
+}
+
+.exit {
+    float: left;
+    margin-left: 50px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(252, 65, 65);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.save {
+    float: left;
+    margin-left: 50px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(66, 240, 98);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.undo {
+    float: right;
+    margin-right: 50px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(151, 225, 255);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.undo:disabled {
+    background-color: darkgrey;
+    cursor: default;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.startNewGame {
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(62, 227, 62);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.gameList {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 2;
+    display: inline-block;
+    text-align: left;
+}
+
+li {
+    position: relative;
+    padding-left: 60px;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    width: 500px;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+li:before {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 50%;
+    margin-top: -10px;
+    border-left: 20px solid #03cb5a;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+li:after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 50%;
+    margin-top: -10px;
+    border-left: 5px solid #fafafa;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+li:hover {
+    border-color: #777;
+    box-shadow: 3px 3px 5px #333;
+    background: rgb(85, 244, 85);
+}
+
+li:hover:before {
+    border-left-color: #777;
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 50%;
+    margin-top: -10px;
+    border-left: 20px solid rgb(255, 255, 255);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+li:hover:after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 50%;
+    margin-top: -10px;
+    border-left: 5px solid rgb(85, 244, 85);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+li:active {
+    background: rgb(85, 244, 85);
+    box-shadow: inset 0 1px 1px #666;
+}

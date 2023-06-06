@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="Application.css">
+
+  <title>Nine Pets' Morris</title>
+</head>
+
+<body background="assets/background.png">
+  <div class="row" style="text-align: center;">
+
+    <div class="column">
+      <button id="exit" class="exit" style="margin-top: 20px;">Exit</button>
+      <button id="save" class="save" style="margin-top: 20px;">Save</button>
+    </div>
+
+    <div class="column">
+      <h1 style="text-align: center; font-size: 5vh; line-height: 0.8;">
+        Nine Pets' Morris
+      </h1>
+    </div>
+
+    <div class="column">
+      <button id="undo" class="undo" style="margin-top: 20px;">Undo</button>
+    </div>
+
+  </div>
+
+  <div class="row" style="text-align: center;">
+
+    <div class="column">
+      <img class="cat" src="assets/cat.png">
+    </div>
+
+    <div class="column">
+      <h2 id="catAliveTokens">Alive Tokens: 9</h2>
+      <h2 id="catUnplacedTokens">Unplaced Tokens: 9</h2>
+    </div>
+
+    <div class="column">
+      <div class="row" style="height: 50%">
+        <div class="column">
+          <h2 style="float: right;">Current</h2>
+        </div>
+        <div class="column">
+          <h2 style="text-align: left; padding-left: 10px;">Turn:</h2>
+        </div>
+        <div class="column" id="currentTurnImage">
+          <img class="currentTurnImage" src="assets/cat.png">
+        </div>
+      </div>
+
+      <div class="row" style="display: contents; line-height: 0.5;">
+        <h3 id="moveMessage">Remove an opponent's token!</h3>
+      </div>
+    </div>
+
+    <div class="column">
+      <h2 id="dogAliveTokens">Alive Tokens: 9</h2>
+      <h2 id="dogUnplacedTokens">Unplaced Tokens: 9</h2>
+    </div>
+
+    <div class="column">
+      <img class="dog" src="assets/dog.png">
+    </div>
+
+  </div>
+
+  <div style="text-align: center ; position:relative; top:-40px;">
+    <canvas id="canvas" style="text-align: center"></canvas>
+  </div>
+
+  <script>var exports = {};</script>
+  <script type="module" src="out/TS/Application.js"></script>
+</body>
+
+</html>
