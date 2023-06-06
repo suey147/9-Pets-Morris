@@ -169,3 +169,18 @@ app.get('/load', (req, res) => {
     }
   });
 });
+
+app.get('/download', (req, res) => {
+  const filePath = path.join(__dirname, '..', 'data.txt');
+  const fileName = 'data.txt';
+
+  res.attachment(fileName);
+
+  res.download(filePath, fileName, (err) => {
+    if (err) {
+      console.error('Error while downloading the file:', err);
+      res.sendStatus(500);
+    }
+  });
+
+});

@@ -159,6 +159,32 @@ export class Application {
 
         this.gameList.push(newGame);
     }
+
+    downloadGS():void {
+        const fileName = "data.txt"
+        fetch('/download')
+          .then(response => {
+            if (!response.ok) {
+                throw new Error('Error while downloading the file');
+              }
+              return response.blob();
+            })
+          .then(content => {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = fileName;
+      
+            document.body.appendChild(link);
+            link.click();
+      
+            document.body.removeChild(link);
+            URL.revokeObjectURL(link.href);
+          })
+          .catch(error => {
+            console.error('Error while downloading the file:', error);
+          });
+    }
 }
 
 

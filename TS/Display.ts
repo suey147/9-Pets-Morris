@@ -114,6 +114,11 @@ export class Display {
         const startNewGameButton = document.getElementById("startNewGame");
         startNewGameButton.removeEventListener('click', function () { Application.getInstance().startNewGame(); });
         startNewGameButton.addEventListener('click', function () { Application.getInstance().startNewGame(); });
+
+        // set up download data.txt button listener
+        const downloadGSButton = document.getElementById("download");
+        downloadGSButton.removeEventListener('click', function () { Application.getInstance().downloadGS(); });
+        downloadGSButton.addEventListener('click', function () { Application.getInstance().downloadGS(); });
     }
 
     /**
