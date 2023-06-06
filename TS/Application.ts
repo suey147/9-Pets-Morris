@@ -75,7 +75,7 @@ export class Application {
      */
     loadGame(gameIndex: number): void {
         localStorage.setItem("currentGameIndex", gameIndex.toString());
-        window.location.href = '/';
+        window.location.href = '/game';
     }
 
     /**
@@ -169,10 +169,10 @@ const application = Application.getInstance();
 const currentURL = window.location.href;
 
 // load the application with either the menu page or the game page
-if (currentURL.includes("/menu")) {
-    application.showingMenu = true;
-} else if (currentURL.includes("/")) {
+if (currentURL.includes("/game")) {
     application.showingMenu = false;
+} else if (currentURL.includes("/")) {
+    application.showingMenu = true;
 }
 application.loadFromFile();
 console.log("Current game index: " + localStorage.getItem("currentGameIndex"));

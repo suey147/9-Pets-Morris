@@ -22,11 +22,12 @@ app.get('/Application.css', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../Application.html'));
-});
-app.get('/menu', (req, res) => {
   res.sendFile(path.join(__dirname, '../menu.html'));
 });
+app.get('/game', (req, res) => {
+  res.sendFile(path.join(__dirname, '../Application.html'));
+});
+
 
 
 

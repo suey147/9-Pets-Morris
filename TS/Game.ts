@@ -155,7 +155,7 @@ export class Game {
     exit(): void {
         const confirmExit = confirm('Are you sure you want to exit the game without saving it?');
         if (confirmExit) {
-            window.location.href = '/menu';
+            window.location.href = '/';
         }
     }
 
@@ -178,7 +178,7 @@ export class Game {
 
             if (isSaveAsNewGame == 'N' || isSaveAsNewGame == 'n' || isSaveAsNewGame == 'No' || isSaveAsNewGame == 'no') {
                 this.saveToFile(this.name, this.gameIndex);
-                window.location.href = '/menu';
+                window.location.href = '/';
                 return;
             }
         }
@@ -196,7 +196,7 @@ export class Game {
         // if user did not cancel entering a name
         if (gameName) {
             this.saveToFile(gameName);
-            window.location.href = '/menu';
+            window.location.href = '/';
         }
     }
 

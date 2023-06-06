@@ -17,7 +17,7 @@ Follow the steps below to run the 9MM application with the advanced requirement 
 1. Open a new terminal
 2. Open directory into `src`
 3. Run `npm start`
-4. Click on the following link: http://localhost:3000/menu
+4. Click on the following link: http://localhost:3000/
 
 ---
 
