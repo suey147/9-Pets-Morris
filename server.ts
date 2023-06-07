@@ -184,3 +184,17 @@ app.get('/download', (req, res) => {
   });
 
 });
+
+app.post('/reset', (req, res) => {
+  const resetContent = '';
+  const filePath = path.join(__dirname, '..', 'data.txt');
+  fs.writeFile(filePath, resetContent, (err) => {
+    if (err) {
+      console.error('Error while resetting the file:', err);
+      res.sendStatus(500);
+    } else {
+      console.log('File has been reset');
+      res.sendStatus(200);
+    }
+  });
+});
